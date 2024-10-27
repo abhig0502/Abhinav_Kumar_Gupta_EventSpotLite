@@ -21,7 +21,7 @@ const style = {
   boxShadow: 80,
   zIndex: 100,
   p: 4,
-  border:"2px solid white"
+  border:"4px solid white"
 };
 
 const LoginModal = ({ setShowLoginModal }) => {
@@ -74,7 +74,7 @@ const LoginModal = ({ setShowLoginModal }) => {
           // Signed in
           // const user = userCredential.user;
           // ...
-          navigate(from || "/mainpage");
+          navigate(from || "/");
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -90,7 +90,7 @@ const LoginModal = ({ setShowLoginModal }) => {
       <Modal open={true} onClose={handleOnClose} className="">
         <div className="">
           <Box sx={style} className="shadow-2xl">
-            <h1 className="text-white text-[35px] font-bold mx-[10px] ml-5 mb-[10px]">
+            <h1 className="text-white text-[35px] font-bold mx-[10px] w-[90%] ml-5 mb-[10px]">
               {isSignInForm ? "Sign In" : "Sign Up"}
             </h1>
             {!isSignInForm && (
@@ -116,7 +116,7 @@ const LoginModal = ({ setShowLoginModal }) => {
               </h4> */}
               <input
                 type="text"
-                className="my-4 mx-5 ml-8 text-center w-[88%] px-[60px] py-[11px] bg-transparent border border-white text-white text-[19px] border-b-white rounded-sm"
+                className="my-4 mx-5 ml-8 text-center px-[60px] py-[11px] w-[88%] bg-transparent border border-white text-white text-[19px] border-b-white rounded-sm"
                 name="email"
                 placeholder="Email or mobile number"
                 value={email}
@@ -143,12 +143,12 @@ const LoginModal = ({ setShowLoginModal }) => {
               >
                 {isSignInForm ? "Sign in" : "Sign Up"}
               </button>
-              <p className="text-red-800">{errorMessage}</p>
+              <p className="text-red-800 text-[18px] font-bold">{errorMessage}</p>
               <h3 className="underline text-white font-bold text-right cursor-pointer hover:text-xl">
                 Forgot Password
               </h3>
               <h4 className="text-white text-center py-2">
-                {isSignInForm ? "New to Netflix?" : "Already Registered?"}
+                {isSignInForm ? "New to EventSpot?" : "Already Registered?"}
                 <h3
                   className="font-bold underline py-2 cursor-pointer hover:text-xl"
                   onClick={toggleSignInForm}

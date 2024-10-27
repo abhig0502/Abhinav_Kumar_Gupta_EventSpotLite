@@ -24,6 +24,9 @@ module.exports = {
         pulseCustom: 'pulseCustom 1.5s ease-in-out infinite',
 
       },
+      colors:{
+        'custom-black': 'rgba(0, 0, 0, 0.8)',
+      },
       keyframes: {
         fadeIn: {
           "0%": { opacity: 0 }, // Start with opacity 0

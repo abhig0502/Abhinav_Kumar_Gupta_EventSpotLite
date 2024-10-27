@@ -4,11 +4,11 @@ import LoginModal from "./LoginModal";
 const LoginBody = ({ showModal, setShowModal }) => {
   return (
     <div>
-      <div className=" flex justify-center items-center -mt-20 ">
+      <div className=" flex justify-center items-center -mt-24 ">
         {showModal && <LoginModal setShowLoginModal={setShowModal} />}
-        <h1 className="w-[1000px] text-[80px] font-bold text-white text-center mt-[200px] justify-items-center animate-scaleUp">
+        {/* <h1 className="w-[1000px] text-[80px] font-bold text-white text-center mt-[200px] justify-items-center animate-scaleUp">
           Acute Mountain Sickness, Symptoms People Ignore During Trek
-        </h1>
+        </h1> */}
       </div>
     </div>
   );
