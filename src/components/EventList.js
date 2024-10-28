@@ -3,17 +3,20 @@ import { events } from "../mockData";
 import EventModal from "./EventModal";
 import { useNavigate } from "react-router-dom";
 import SideMenu from "./SideMenu";
+import { useContext } from "react";
+import { SearchContext } from "../utils/SearchContextProvider";
 
 const EventList = () => {
-  const [searchTerm, setSearchTerm] = useState("");
+    const { eventSearchTerm } = useContext(SearchContext);
+//   const [searchTerm, setSearchTerm] = useState("");
   const [selectedEvent, setSelectedEvent] = useState(null);
 
   const navigate = useNavigate();
 
   const filteredEvents = events.filter(
     (event) =>
-      event.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      event.location.toLowerCase().includes(searchTerm.toLowerCase())
+      event.name.toLowerCase().includes(eventSearchTerm.toLowerCase()) ||
+      event.location.toLowerCase().includes(eventSearchTerm.toLowerCase())
   );
 
   return (
