@@ -25,7 +25,7 @@ const SideMenu = () => {
 
         {/* Sidebar Menu */}
         <div
-          className={`w-[200px] h-full bg-black text-white fixed top-0 left-0 transform ${
+          className={`w-[200px] -ml-[1px] h-full bg-black text-white fixed top-0 left-0 transform ${
             isSidebarOpen ? "" : "-translate-x-full"
           } transition-transform duration-300 ease-in-out z-40 ml-5 mt-5`}
         >
@@ -98,7 +98,7 @@ const SideMenu = () => {
                 </li>
                 <li
                   //   className="ml-3 px-5 py-5 mt- rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500"
-                  className="-ml-[70px] px-3 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
+                  className="-ml-[67px] px-3 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
                   onClick={() => {
     
                   navigate("/sport")
@@ -107,7 +107,7 @@ const SideMenu = () => {
                 </li>
                 <li
                   //   className="ml-3 px-5 py-5 mt- rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500"
-                  className="-ml-[76px] px-3 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
+                  className="-ml-[70px] px-3 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
                   onClick={() => {
 
                   navigate("/food")
@@ -116,7 +116,7 @@ const SideMenu = () => {
                 </li>
                 <li
                   //   className="ml-3 px-5 py-5 mt- rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500"
-                  className="-ml-12 px-20 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
+                  className="-ml-7 px-20 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
                   onClick={() => {
            
                   navigate("/wellness")
@@ -125,7 +125,7 @@ const SideMenu = () => {
                 </li>
                 <li
                   //   className="ml-3 px-5 py-5 mt- rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500"
-                  className="-ml-8 px-20 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
+                  className="-ml-5 px-20 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
                   onClick={() => {
  
                   navigate("/outdoor")

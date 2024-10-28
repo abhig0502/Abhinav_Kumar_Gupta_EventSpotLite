@@ -50,7 +50,7 @@ const Header = () => {
           />
           <div className="flex flex-row gap-5">
             <div className=" md:mr-[250px] ">
-              <button className="px-1 py-1 md:px-3 md:py-2 bg-white md:bg-black rounded-2xl hover:bg-sky-500 hover:text-white">
+              <button className="px-1 py-1 md:px-3 md:py-2 bg-white md:bg-black rounded-2xl hover:bg-sky-500 md:hover:bg-black md:hover:text-black md:text-black">
                 search
               </button>
             </div>
