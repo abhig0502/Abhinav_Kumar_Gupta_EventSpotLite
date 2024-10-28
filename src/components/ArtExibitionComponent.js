@@ -7,9 +7,9 @@ import SideMenu from "./SideMenu";
 const ArtExhibitionComponent = () => {
   return (
     <div className="max-w-lg mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-2xl mt-10">
+        <Header/>
       <SideMenu />
-
-      <div className="md:flex">
+      <div className="md:flex mt-56">
         <div className="md:flex-shrink-0">
           <img
             className="h-56 w-full object-cover md:w-56"

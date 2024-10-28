@@ -1,11 +1,13 @@
 import React from 'react';
 import SideMenu from './SideMenu';
+import Header from './Header';
 
 const WellnessFitnessComponent = () => {
     return (
         <div className="max-w-lg mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-2xl mt-10">
+        <Header/>
         <SideMenu/>
-            <div className="md:flex">
+            <div className="md:flex mt-56">
                 <div className="md:flex-shrink-0">
                     <img className="h-56 w-full object-cover md:w-56" src="https://www.mohawkcollege.ca/sites/default/files/styles/program_hero_image/public/Health-Wellness-.jpeg?itok=YEvt1r3q" alt="Wellness & Fitness" />
                 </div>

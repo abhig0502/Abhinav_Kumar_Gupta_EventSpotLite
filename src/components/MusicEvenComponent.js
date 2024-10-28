@@ -6,9 +6,9 @@ const MusicEventComponent = () => {
   return (
     <div className="bg-white">
       <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-10">
+        <Header/>
         <SideMenu />
-
-        <div className="md:flex">
+        <div className="md:flex mt-56">
           <div className="md:flex-shrink-0">
             <img
               className="h-48 w-full object-cover md:w-48"

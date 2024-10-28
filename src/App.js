@@ -18,7 +18,7 @@ import SportEventComponent from "./components/SportEventComponent";
 import FoodAndDrinksComponent from "./components/FoodAndDrinkComponent";
 import WellnessFitnessComponent from "./components/WellnessFitnessComponent";
 import OutdoorAdventureComponent from "./components/OutdoorAdventureComponent";
-
+import Trending from "./components/Trending";
 function App() {
   const appRouter = createBrowserRouter([
     {
@@ -79,6 +79,18 @@ function App() {
       path: "/outdoor", 
       element: <OutdoorAdventureComponent />,
     },
+    {
+      path: "/header", 
+      element: <Header />,
+    },
+    {
+      path: "/event", 
+      element: <EventList />,
+    },
+    {
+      path:"/trending",
+      element:<Trending/>
+    }
   ]);
 
   return (

@@ -1,11 +1,13 @@
 import React from 'react';
 import SideMenu from './SideMenu';
+import Header from './Header';
 
 const FoodAndDrinksComponent = () => {
     return (
         <div className="max-w-lg mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-2xl mt-10">
+        <Header/>
         <SideMenu/>
-            <div className="md:flex">
+            <div className="md:flex mt-56">
                 <div className="md:flex-shrink-0">
                     <img className="h-56 w-full object-cover md:w-56" src="https://images.ctfassets.net/iiu58j8xnirw/2cSP3PE5oo47adZXSJ841E/5f088a939952567f8986d6f060bddf3b/mapltonpublichouse.jpg?w=1920&q=70&fm=webp" alt="Food & Drinks Event" />
                 </div>

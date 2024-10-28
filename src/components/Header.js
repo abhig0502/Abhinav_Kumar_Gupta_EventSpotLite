@@ -1,15 +1,13 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { events } from "../mockData";
 import { useSearch } from "../utils/context";
 
 const Header = () => {
-    const { searchTerm } = useSearch();
-
+  const { searchTerm } = useSearch();
   const [signIn, setSignIn] = useState("SignIn");
-
   const navigate = useNavigate();
+
   const handleOnClick = () => {
     navigate("/location");
   };
@@ -19,99 +17,91 @@ const Header = () => {
     signIn === "SignIn" ? setSignIn("SignOut") : setSignIn("SignIn");
   };
 
+
+
+  const menuItems = [
+    { name: "Home", path: "/" },
+    { name: "Discover", path: "/discover" },
+    { name: "Location", path: "/location" },
+    { name: "Trendings", path: "/trending" }
+  ];
+
+
   return (
     <div className="bg-black fixed top-0 left-0 w-full z-10">
-      <div className="flex">
-        <div className="w-[150px] h-[150px] ml-11 mt-3 mb-2 rounded-[500px] hover:bg-sky-500 hover:text-white">
-          <img
-            className="w-[150px] h-[150px] rounded-[500px] shadow-2xl"
-            alt="profile-photo"
-            src="https://c0.wallpaperflare.com/preview/684/566/377/backlit-beach-blue-dark-blue.jpg"
-          />
-        </div>
-        <div className="">
-          <div className="mt-1 ml-11 flex justify-between">
-            <div className="text-[30px] mt-5 -ml-5">
-              <h1 className="font-serif text-white">EventSpot Lite</h1>
-            </div>
-            <div className="text-[60px]">
-              <div className="-mt-5 ml-32 mr-64">
-                <input
-                  type="text"
-                  className=" w-[550px] h-[36px] text-[15px] text-center rounded-xl mr-11"
-                  placeholder="Search Events Or Location ..."
-                />
-              </div>
-            </div>
-            <div className="flex">
-              <div className="rounded-2xl cursor-pointer">
-                <button
-                  className="ml-5 mt-5 px-3 py-2 bg-white rounded-2xl hover:bg-sky-500 hover:text-white"
-                  onClick={handleSignInButton}
-                >
-                  {signIn}
-                </button>
-              </div>
-            </div>
+      <div className="flex flex-col md:flex-row items-center m-6">
+        <div className="flex items-center ">
+          <div className="w-20 h-20 md:w-[150px] md:h-[150px] rounded-full overflow-hidden hover:bg-sky-500 hover:text-white">
+            <img
+              className="w-full h-full object-cover"
+              alt="profile-photo"
+              src="https://c0.wallpaperflare.com/preview/684/566/377/backlit-beach-blue-dark-blue.jpg"
+            />
           </div>
-
-          <div className="flex justify-between ml-11 mb-2">
-            <ul className="flex justify-between">
-              <li
-                //   className="mt-3 ml-11 px-11 py-2 bg-white rounded-2xl cursor-pointer hover:bg-sky-500 hover:text-white"
-                className="mt-3 ml-11 px-7 py-2 text-white  bg-gray-900  rounded-2xl cursor-pointer  hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center"
-                onClick={() => {
-                  navigate("/");
-                }}
-              >
-                Home
-              </li>
-              <li
-                //   className="mt-3 ml-11 px-11 py-2 bg-white rounded-2xl cursor-pointer hover:bg-sky-500 hover:text-white"
-                className="mt-3 ml-11 px-7 py-2  text-white bg-gray-900  rounded-2xl cursor-pointer  hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center"
-                onClick={() => {
-                  navigate("/discover");
-                }}
-              >
-                Trending/Top Suggestions
-              </li>
-              <li
-                //   className="mt-3 ml-11 px-11 py-2 bg-white rounded-2xl cursor-pointer hover:bg-sky-500 hover:text-white"
-                className="mt-3 ml-11 px-7 py-2  text-white bg-gray-900  rounded-2xl cursor-pointer  hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center"
-                onClick={() => {
-                  navigate("/location");
-                }}
-              >
-                Location Filters
-              </li>
-              <li
-                //   className="mt-3 ml-11 px-11 py-2 bg-white rounded-2xl cursor-pointer hover:bg-sky-500 hover:text-white"
-                className="mt-3 ml-11 px-7 py-2 text-white  bg-gray-900  rounded-2xl cursor-pointer  hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center"
-              >
-                Date Filters
-              </li>
-              <li
-                //   className="mt-3 ml-11 px-11 py-2 bg-white rounded-2xl cursor-pointer hover:bg-sky-500 hover:text-white"
-                className="mt-3 ml-11 px-7 py-2 text-white  bg-gray-900  rounded-2xl cursor-pointer  hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center"
-              >
-                Event Type
-              </li>
-              <li
-                //   className="mt-3 ml-11 px-11 py-2 bg-white rounded-2xl cursor-pointer hover:bg-sky-500 hover:text-white"
-                className="mt-3 ml-11 px-7 py-2  text-white bg-gray-900  rounded-2xl cursor-pointer  hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center"
-              >
-                Trendings
-              </li>
-            </ul>
+          <h1 className="font-serif text-white text-lg md:text-2xl ml-4">
+            EventSpot Lite
+          </h1>
+        </div>
+        <div className=" md:mt-0 flex flex-col md:flex-row items-center ml-44 mr-44 mt-6 ">
+          <input
+            type="text"
+            className="w-[280px] h-7 md:w-[550px] md:h-10 text-sm text-center rounded-xl mb-4 md:mb-0 md:mr-4"
+            placeholder="Search Events Or Location ..."
+          />
+          <div className="flex flex-row gap-5">
+            <div className=" md:mr-[250px] ">
+            <button
+              className="px-2 py-1 md:px-3 md:py-2 bg-white rounded-2xl hover:bg-sky-500 hover:text-white"
+              
+            >
+              search
+            </button>
+            </div>
+            <div className="md:-mr-44 md:-mt-[50px]">
+            <button
+              className="px-2 py-1 md:px-3 md:py-2 bg-white rounded-2xl hover:bg-sky-500 hover:text-white"
+              onClick={handleSignInButton}
+            >
+              {signIn}
+            </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <div className="flex flex-row md:flex-row justify-center md:justify-between p-4">
+        {/* <ul className="flex flex-row md:flex-row items-center">
+          {["Home", "Top Suggestions", "Location ", "Trendings"].map(
+            (item, index) => (
+              <li
+                key={index}
+                className="-mt-6 ml-1 md:ml-4 px-2 py-2 md:px-7 md:py-2 text-white bg-gray-900 rounded-2xl cursor-pointer hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex items-center justify-center"
+                onClick={() =>
+                  navigate(`/${item.toLowerCase().replace(/ /g, "")}`)
+                }
+              >
+                {item}
+              </li>
+            )
+          )}
+        </ul> */}
 
-    
+
+        <ul className="flex flex-row md:flex-row items-center">
+      {menuItems.map((item, index) => (
+        <li
+          key={index}
+          className="-mt-6 ml-1 md:ml-4 px-2 py-2 md:px-7 md:py-2 text-white bg-gray-900 rounded-2xl cursor-pointer hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex items-center justify-center"
+          onClick={() => navigate(item.path)}
+        >
+          {item.name}
+        </li>
+      ))}
+    </ul>
+
+
+      </div>
+    </div>
   );
 };
 
 export default Header;
-
-
