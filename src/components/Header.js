@@ -1,18 +1,24 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { events } from "../mockData";
+import { useSearch } from "../utils/context";
 
 const Header = () => {
-    const navigate=useNavigate();
-    const handleOnClick=()=>{
-        navigate("/location");
-    }
+    const { searchTerm } = useSearch();
 
   const [signIn, setSignIn] = useState("SignIn");
+
+  const navigate = useNavigate();
+  const handleOnClick = () => {
+    navigate("/location");
+  };
+
   const handleSignInButton = () => {
     navigate("/Login");
     signIn === "SignIn" ? setSignIn("SignOut") : setSignIn("SignIn");
   };
+
   return (
     <div className="bg-black fixed top-0 left-0 w-full z-10">
       <div className="flex">
@@ -53,18 +59,28 @@ const Header = () => {
             <ul className="flex justify-between">
               <li
                 //   className="mt-3 ml-11 px-11 py-2 bg-white rounded-2xl cursor-pointer hover:bg-sky-500 hover:text-white"
-                className="mt-3 ml-11 px-7 py-2 text-white  bg-gray-900  rounded-2xl cursor-pointer  hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center" onClick={()=>{navigate("/")}}
+                className="mt-3 ml-11 px-7 py-2 text-white  bg-gray-900  rounded-2xl cursor-pointer  hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center"
+                onClick={() => {
+                  navigate("/");
+                }}
               >
                 Popularity
               </li>
               <li
                 //   className="mt-3 ml-11 px-11 py-2 bg-white rounded-2xl cursor-pointer hover:bg-sky-500 hover:text-white"
-                className="mt-3 ml-11 px-7 py-2  text-white bg-gray-900  rounded-2xl cursor-pointer  hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center" onClick={()=>{navigate("/discover")}}>
+                className="mt-3 ml-11 px-7 py-2  text-white bg-gray-900  rounded-2xl cursor-pointer  hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center"
+                onClick={() => {
+                  navigate("/discover");
+                }}
+              >
                 Trending/Top Suggestions
               </li>
               <li
                 //   className="mt-3 ml-11 px-11 py-2 bg-white rounded-2xl cursor-pointer hover:bg-sky-500 hover:text-white"
-                className="mt-3 ml-11 px-7 py-2  text-white bg-gray-900  rounded-2xl cursor-pointer  hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center" onClick={()=>{navigate("/location")}}
+                className="mt-3 ml-11 px-7 py-2  text-white bg-gray-900  rounded-2xl cursor-pointer  hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center"
+                onClick={() => {
+                  navigate("/location");
+                }}
               >
                 Location Filters
               </li>
@@ -91,7 +107,11 @@ const Header = () => {
         </div>
       </div>
     </div>
+
+    
   );
 };
 
 export default Header;
+
+

@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-
 const LoginPageSlideShow = () => {
   // Array of background images
-  
+
   const images = [
     "https://media.istockphoto.com/id/1478375497/photo/friends-dancing-at-the-festival.jpg?s=612x612&w=0&k=20&c=rVwFBKe__UuQld6kJUWjV48kyw-40OHlnuyQZd4_lgQ=",
     "https://t4.ftcdn.net/jpg/06/34/93/11/360_F_634931170_QtnVJ0lzC2B1gv6kI8vTGwEWdDi4izDF.jpg",
@@ -40,38 +39,22 @@ const LoginPageSlideShow = () => {
   return (
     <div className="relative  w-full  object-fill animate-scaleUp">
       {/* Slideshow background */}
-      <div
+      {/* <div
         className="absolute top-0 left-0 w-full h-[680px] bg-cover bg-center transition-all duration-1000 object-cover"
         style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
+      ></div> */}
+      <div
+        className="absolute top-0 left-0 w-full h-[680px] sm:h-[500px] md:h-[600px] lg:h-[680px] bg-cover bg-center transition-all duration-1000 object-cover overflow-hidden"
+        style={{
+          backgroundImage: `url(${images[currentImageIndex]})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
       ></div>
 
       {/* Slideshow controls (Optional) */}
-      <div className="absolute top-1/2 left-0 w-full flex justify-between px-4 transform -translate-y-1/2 -z-10">
-        <button
-          className="bg-white text-black p-2 rounded-full opacity-50 hover:opacity-100"
-          onClick={handlePrevImage}
-        >
-          &#10094; {/* Left Arrow */}
-        </button>
-        <button
-          className="bg-white text-black p-2 rounded-full opacity-50 hover:opacity-100"
-          onClick={handleNextImage}
-        >
-          &#10095; {/* Right Arrow */}
-        </button>
-      </div>
 
       {/* Slideshow indicators */}
-      <div className="absolute bottom-5 left-0 w-full flex justify-center z-10 ">
-        {images.map((_, index) => (
-          <div
-            key={index}
-            className={`h-3 w-3 mx-1 rounded-full ${
-              index === currentImageIndex ? "bg-black" : "bg-black"
-            }`}
-          ></div>
-        ))}
-      </div>
     </div>
   );
 };

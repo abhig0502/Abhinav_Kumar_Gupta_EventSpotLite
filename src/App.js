@@ -6,9 +6,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainPage from "./components/MainPage";
 import Error from "./components/Error";
 import LoginHeader from "./components/LoginHeader";
-import LoginPage from "./components/LoginPage"
+import LoginPage from "./components/LoginPage";
 import Discover from "./components/Discover";
-import EventLocation from "./components/EventLocation"
+import EventLocation from "./components/EventLocation";
+import { SearchProvider } from "./utils/context";
+
 function App() {
   const appRouter = createBrowserRouter([
     {
@@ -37,12 +39,18 @@ function App() {
       path: "/location", // Catch-all route for undefined paths
       element: <EventLocation />,
     },
+    {
+      path: "/header", // Catch-all route for undefined paths
+      element: <Header />,
+    },
   ]);
 
   return (
-    <div className="App">
-      <RouterProvider router={appRouter} />
-    </div>
+    <SearchProvider>
+      <div className="App">
+        <RouterProvider router={appRouter} />
+      </div>
+    </SearchProvider>
   );
 }
 

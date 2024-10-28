@@ -7,9 +7,10 @@ const LoginHeader = ({ setShowModal }) => {
 
   return (
     <div className="flex justify-between bg-gradient-to-b from- relative z-20">
-      <div className="px-8 py-1 flex w-[200px] h-[100px]">
+      <div className="px-8 py-1 flex w-[200px] h-[100px] ">
         <img
           className="w-[100px] h-[100px] animate-scaleUp"
+      
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR98sO8L7URt8Qr2kyH2ad19UpZufsvCRNCAA&s"
           alt="eventspot-logo "
         />
