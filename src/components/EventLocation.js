@@ -17,7 +17,7 @@ const Discover = () => {
   );
 
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-black min-h-screen ">
       <div>
         <Header />
         <SideMenu />
@@ -34,7 +34,7 @@ const Discover = () => {
           {filteredEvents.map((event) => (
             <div
               key={event.id}
-              className="w-full sm:w-[300px] h-auto bg-black rounded-2xl shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center mt-7"
+              className="w-full sm:w-[300px] h-auto bg-black rounded-2xl shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center mt-7 animate-scaleUp"
               onClick={() => setSelectedEvent(event)}
             >
               <div className="w-full">

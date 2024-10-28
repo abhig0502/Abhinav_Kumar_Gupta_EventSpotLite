@@ -62,17 +62,17 @@ const Trending = () => {
   ];
 
   return (
-    <div className="bg-black min-h-screen p-4 mt-5">
+    <div className="bg-black min-h-screen p-4 mt-5 ">
       <Header />
       <SideMenu />
-      <h1 className="text-2xl font-bold text-center text-gray-800 mb-6 mt-60">
+      <h1 className="text-2xl font-bold text-center text-gray-800 mb-6 mt-60 animate-slideIn">
         Trending Events
       </h1>
       <div className="space-y-6">
         {events.map((event) => (
           <div
             key={event.id}
-            className="bg-white rounded-xl shadow-md overflow-hidden"
+            className="bg-white rounded-xl shadow-md overflow-hidden animate-slideIn"
           >
             <div className="md:flex">
               <div className="md:flex-shrink-0">

@@ -24,17 +24,17 @@ const Discover = () => {
       </div>
       <div className="px-4">
         <div className="flex flex-wrap gap-6 pt-5 mt-40 justify-center">
-          <div className="relative w-full sm:w-[42%] h-[30%] mb-[380px]">
+          <div className="relative w-full sm:w-[42%] h-[30%] mb-[380px] ">
             <ImageSlideshow />
             <div className="text-[35px] sm:text-[30px] relative text-center md:mt-2 pt-[120px]">
-              <p className="font-bold text-white underline">Discover Your Event</p>
+              <p className="font-bold text-white animate-scaleUp">Discover Your Event</p>
             </div>
           </div>
 
           {filteredEvents.map((event) => (
             <div
               key={event.id}
-              className="w-full sm:w-[300px] h-auto bg-black rounded-2xl shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center mt-7"
+              className="w-full sm:w-[300px] h-auto bg-black rounded-2xl shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-lg flex flex-col items-center justify-center mt-7 animate-scaleUp"
               onClick={() => setSelectedEvent(event)}
             >
               <div className="w-full">
@@ -45,7 +45,7 @@ const Discover = () => {
                     src={event.image}
                   />
                 </div>
-                <div className="relative p-4 bg-gray-950 text-white">
+                <div className="relative p-4 bg-gray-950 text-white ">
                   <h3 className="text-[16px] sm:text-[18px]">{event.name}</h3>
                   <p className="text-[16px] sm:text-[18px]">{event.location}</p>
                   <p className="text-[14px] sm:text-[16px]">{event.date}</p>

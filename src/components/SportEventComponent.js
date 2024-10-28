@@ -7,7 +7,7 @@ const SportEventComponent = () => {
         <div className="max-w-lg mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-2xl mt-10">
         <Header/>
         <SideMenu/>
-            <div className="md:flex mt-56">
+            <div className="md:flex mt-56 animate-slideIn">
                 <div className="md:flex-shrink-0">
                     <img className="h-56 w-full object-cover md:w-56" src="https://eventacademy.com/wp-content/uploads/2018/06/EKqR85R.jpg" alt="Sport Event" />
                 </div>
@@ -26,7 +26,7 @@ const SportEventComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className="md:flex">
+            <div className="md:flex animate-slideIn">
                 <div className="md:flex-shrink-0">
                     <img className="h-56 w-full object-cover md:w-56" src="https://media.lunagroupcharter.com/lgc/be71bd60-68eb-44c0-8001-51fb18c42819_word-cup.jpg" alt="Sport Event" />
                 </div>
@@ -45,7 +45,7 @@ const SportEventComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className="md:flex">
+            <div className="md:flex animate-slideIn">
                 <div className="md:flex-shrink-0">
                     <img className="h-56 w-full object-cover md:w-56" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Beijing_2008%2C_Beijing_National_Stadium.jpg" alt="Sport Event" />
                 </div>
@@ -64,7 +64,7 @@ const SportEventComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className="md:flex">
+            <div className="md:flex animate-slideIn">
                 <div className="md:flex-shrink-0">
                     <img className="h-56 w-full object-cover md:w-56" src="https://www.theodmgroup.com/wp-content/uploads/2011/01/iaafworldathleticsfinal2008day2fwzzffsqu9kl.jpg" alt="Sport Event" />
                 </div>
@@ -83,7 +83,7 @@ const SportEventComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className="md:flex">
+            <div className="md:flex animate-slideIn">
                 <div className="md:flex-shrink-0">
                     <img className="h-56 w-full object-cover md:w-56" src="https://www.habegger.ch/content/uploads/2022/08/sportevent_1-scaled.jpg" alt="Sport Event" />
                 </div>

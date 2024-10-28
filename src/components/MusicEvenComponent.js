@@ -8,7 +8,7 @@ const MusicEventComponent = () => {
       <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-10">
         <Header/>
         <SideMenu />
-        <div className="md:flex mt-56">
+        <div className="md:flex mt-56 animate-slideIn">
           <div className="md:flex-shrink-0">
             <img
               className="h-48 w-full object-cover md:w-48"
@@ -53,7 +53,7 @@ const MusicEventComponent = () => {
           </div>
         </div>
         {/* second */}
-        <div className="md:flex">
+        <div className="md:flex animate-slideIn">
           <div className="md:flex-shrink-0">
             <img
               className="h-48 w-full object-cover md:w-48"
@@ -97,7 +97,7 @@ const MusicEventComponent = () => {
             </div>
           </div>
         </div>
-        <div className="md:flex">
+        <div className="md:flex animate-slideIn">
           <div className="md:flex-shrink-0">
             <img
               className="h-48 w-full object-cover md:w-48"
@@ -141,7 +141,7 @@ const MusicEventComponent = () => {
             </div>
           </div>
         </div>
-        <div className="md:flex">
+        <div className="md:flex animate-slideIn">
           <div className="md:flex-shrink-0">
             <img
               className="h-48 w-full object-cover md:w-48"
@@ -185,7 +185,7 @@ const MusicEventComponent = () => {
             </div>
           </div>
         </div>
-        <div className="md:flex">
+        <div className="md:flex animate-slideIn">
           <div className="md:flex-shrink-0">
             <img
               className="h-48 w-full object-cover md:w-48"

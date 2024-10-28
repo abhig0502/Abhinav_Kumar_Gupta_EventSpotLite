@@ -8,7 +8,7 @@ const TechInnovationComponent = () => {
       <Header />
       <SideMenu />
 
-      <div className="md:flex mt-56">
+      <div className="md:flex mt-56 animate-slideIn">
         <div className="md:flex-shrink-0">
           <img
             className="h-56 w-full object-cover md:w-56"
@@ -52,7 +52,7 @@ const TechInnovationComponent = () => {
           </div>
         </div>
       </div>
-      <div className="md:flex">
+      <div className="md:flex animate-slideIn">
         <div className="md:flex-shrink-0">
           <img
             className="h-56 w-full object-cover md:w-56"
@@ -96,7 +96,7 @@ const TechInnovationComponent = () => {
           </div>
         </div>
       </div>
-      <div className="md:flex">
+      <div className="md:flex animate-slideIn">
         <div className="md:flex-shrink-0">
           <img
             className="h-56 w-full object-cover md:w-56"
@@ -140,7 +140,7 @@ const TechInnovationComponent = () => {
           </div>
         </div>
       </div>
-      <div className="md:flex">
+      <div className="md:flex animate-slideIn">
         <div className="md:flex-shrink-0">
           <img
             className="h-56 w-full object-cover md:w-56"
@@ -184,7 +184,7 @@ const TechInnovationComponent = () => {
           </div>
         </div>
       </div>
-      <div className="md:flex">
+      <div className="md:flex animate-slideIn">
         <div className="md:flex-shrink-0">
           <img
             className="h-56 w-full object-cover md:w-56"

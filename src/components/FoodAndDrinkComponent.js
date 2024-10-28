@@ -7,7 +7,7 @@ const FoodAndDrinksComponent = () => {
         <div className="max-w-lg mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-2xl mt-10">
         <Header/>
         <SideMenu/>
-            <div className="md:flex mt-56">
+            <div className="md:flex mt-56 animate-slideIn">
                 <div className="md:flex-shrink-0">
                     <img className="h-56 w-full object-cover md:w-56" src="https://images.ctfassets.net/iiu58j8xnirw/2cSP3PE5oo47adZXSJ841E/5f088a939952567f8986d6f060bddf3b/mapltonpublichouse.jpg?w=1920&q=70&fm=webp" alt="Food & Drinks Event" />
                 </div>
@@ -26,7 +26,7 @@ const FoodAndDrinksComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className="md:flex">
+            <div className="md:flex animate-slideIn">
                 <div className="md:flex-shrink-0">
                     <img className="h-56 w-full object-cover md:w-56" src="https://media.post.rvohealth.io/wp-content/uploads/2020/08/friends-eating-and-drinking-together-thumb.jpg" alt="Food & Drinks Event" />
                 </div>
@@ -45,7 +45,7 @@ const FoodAndDrinksComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className="md:flex">
+            <div className="md:flex animate-slideIn">
                 <div className="md:flex-shrink-0">
                     <img className="h-56 w-full object-cover md:w-56" src="https://media.post.rvohealth.io/wp-content/uploads/2020/08/friends-eating-and-drinking-together-thumb.jpg" alt="Food & Drinks Event" />
                 </div>
@@ -64,7 +64,7 @@ const FoodAndDrinksComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className="md:flex">
+            <div className="md:flex animate-slideIn">
                 <div className="md:flex-shrink-0">
                     <img className="h-56 w-full object-cover md:w-56" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsOhSafjaa8aSU0zqqSBolHE6Dyukq8MwPCA&s" alt="Food & Drinks Event" />
                 </div>
@@ -83,7 +83,7 @@ const FoodAndDrinksComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className="md:flex">
+            <div className="md:flex animate-slideIn">
                 <div className="md:flex-shrink-0">
                     <img className="h-56 w-full object-cover md:w-56" src="https://media.assettype.com/theceo/2023-03/e2d66986-dfad-4c7e-af89-5cc8a7d1c447/Understanding_Food_and_Beverage_Services_Understanding_Food_and_Beverage_Services.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true" alt="Food & Drinks Event" />
                 </div>
@@ -102,7 +102,7 @@ const FoodAndDrinksComponent = () => {
                     </div>
                 </div>
             </div>
-            <div className="md:flex">
+            <div className="md:flex animate-slideIn ">
                 <div className="md:flex-shrink-0">
                     <img className="h-56 w-full object-cover md:w-56" src="https://st3.depositphotos.com/12985790/16157/i/450/depositphotos_161573074-stock-photo-friends-eating-pizza-together.jpg" alt="Food & Drinks Event" />
                 </div>
