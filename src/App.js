@@ -13,6 +13,11 @@ import { SearchProvider } from "./utils/context";
 import DanceCardList from "./components/DanceCardList";
 import MusicEventComponent from "./components/MusicEvenComponent";
 import ArtExhibitionComponent from "./components/ArtExibitionComponent";
+import TechInnovationComponent from "./components/TechInnovationComponent";
+import SportEventComponent from "./components/SportEventComponent";
+import FoodAndDrinksComponent from "./components/FoodAndDrinkComponent";
+import WellnessFitnessComponent from "./components/WellnessFitnessComponent";
+import OutdoorAdventureComponent from "./components/OutdoorAdventureComponent";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -31,28 +36,48 @@ function App() {
     },
 
     {
-      path: "*", // Catch-all route for undefined paths
+      path: "*", 
       element: <Error />,
     },
     {
-      path: "/discover", // Catch-all route for undefined paths
+      path: "/discover",
       element: <Discover />,
     },
     {
-      path: "/location", // Catch-all route for undefined paths
+      path: "/location", 
       element: <EventLocation />,
     },
     {
-      path: "/dance", // Catch-all route for undefined paths
+      path: "/dance", 
       element: <DanceCardList />,
     },
     {
-      path: "/music", // Catch-all route for undefined paths
+      path: "/music", 
       element: <MusicEventComponent />,
     },
     {
-      path: "/art", // Catch-all route for undefined paths
+      path: "/art", 
       element: <ArtExhibitionComponent />,
+    },
+    {
+      path: "/tech", 
+      element: <TechInnovationComponent />,
+    },
+    {
+      path: "/sport", 
+      element: <SportEventComponent />,
+    },
+    {
+      path: "/food", 
+      element: <FoodAndDrinksComponent />,
+    },
+    {
+      path: "/wellness", 
+      element: <WellnessFitnessComponent />,
+    },
+    {
+      path: "/outdoor", 
+      element: <OutdoorAdventureComponent />,
     },
   ]);
 
