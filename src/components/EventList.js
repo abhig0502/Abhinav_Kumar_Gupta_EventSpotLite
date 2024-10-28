@@ -17,7 +17,7 @@ const EventList = () => {
   );
 
   return (
-    <div className="bg-black flex flex-col md:flex-row mt-[170px]">
+    <div className="bg-black flex flex-col md:flex-row mt-[170px] animate-scaleUp">
       <SideMenu />
       <div className="md:ml-[220px] p-4 mt-28">
         {/* <div className="mb-4">

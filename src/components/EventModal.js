@@ -23,7 +23,7 @@ import React from 'react';
 const EventModal = ({ event, onClose }) => {
   return (
     <div className="fixed inset-0 flex justify-center items-center animate-fadeIn bg-black bg-opacity-60" onClick={onClose}>
-      <div className="relative bg-white w-full max-w-lg mx-4 md:mx-0 md:w-[680px] h-auto md:h-[485px] mt-16 p-5 rounded-2xl md:mt-60" onClick={(e) => e.stopPropagation()}>
+      <div className="relative bg-white w-full max-w-lg mx-4 md:mx-0 md:w-[680px] h-auto md:h-[485px] mt-16 p-5 rounded-2xl md:mt-60 animate-slideIn" onClick={(e) => e.stopPropagation()}>
         <button className="absolute top-2 right-2 text-black text-lg cursor-pointer z-10" onClick={onClose}>X</button>
         <h2 className='font-bold mb-2 text-lg md:text-[20px]'>{event.name}</h2>
         <img src={event.image} alt={event.name} className='w-full h-48 md:w-[650px] md:h-[350px] rounded-xl object-cover' />

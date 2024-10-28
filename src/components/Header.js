@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <div className="bg-black fixed top-0 left-0 w-full z-10">
-      <div className="flex flex-col md:flex-row items-center m-6">
+      <div className="flex flex-col md:flex-row items-center m-6 animate-scaleUp">
         <div className="flex items-center ">
           <div className="w-20 h-20 md:w-[150px] md:h-[150px] rounded-full overflow-hidden hover:bg-sky-500 hover:text-white">
             <img
@@ -45,7 +45,7 @@ const Header = () => {
         <div className=" md:mt-0 flex flex-col md:flex-row items-center ml-44 mr-44 mt-6 ">
           <input
             type="text"
-            className="w-[280px] h-7 md:w-[550px] md:h-10 text-sm text-center rounded-xl mb-4 md:mb-0 md:mr-4"
+            className="w-[200px] h-7 md:w-[550px] md:h-10 text-sm text-center rounded-xl mb-4 md:mb-0 md:mr-4"
             placeholder="Search Events Or Location ..."
           />
           <div className="flex flex-row gap-5">
