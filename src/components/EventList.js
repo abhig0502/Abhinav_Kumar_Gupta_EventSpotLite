@@ -3,12 +3,14 @@ import React, { useState } from "react";
 import { events } from "../mockData";
 import EventModal from "./EventModal";
 import { useSearch } from "../utils/context";
+import { useNavigate } from "react-router-dom";
 
 const EventList = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedEvent, setSelectedEvent] = useState(null);
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const navigate=useNavigate();
 
 //   const { setSearchTerm } = useSearch();
 
@@ -53,19 +55,25 @@ const EventList = () => {
               <li
                 //   className="ml-3 px-5 py-5 mt-4 rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500 "
                 className="ml-3 px-3 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white  transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center mt-1"
-              >
+                onClick={() => {
+                  navigate("/");
+                }}>
                 Home
               </li>
               <li
                 //   className="ml-3 px-5 py-5 mt- rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500"
                 className="ml-3 px-3 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white  transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
-              >
-                Disvover
+                onClick={() => {
+                  navigate("/discover");
+                }}>
+                Discover
               </li>
               <li
                 //   className="ml-3 px-5 py-5 mt- rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500"
                 className="ml-3 px-3 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
-              >
+                onClick={() => {
+                  navigate("/dance");
+                }}>
                 Dancing
               </li>
               <hr className=" ml-3 mt-2 w-[145px] mb-2" />
@@ -78,13 +86,17 @@ const EventList = () => {
                 <li
                   //   className="ml-3 px-5 py-5 mt- rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500"
                   className="ml-3 px-3 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
-                >
+                  onClick={() => {
+                  navigate("/music");
+                }}>
                   Music Events
                 </li>
                 <li
                   //   className="ml-3 px-5 py-5 mt- rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500"
                   className="ml-3 px-3 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
-                >
+                  onClick={() => {
+                  navigate("/art");
+                }}>
                   Art&Exhibitions
                 </li>
                 <li

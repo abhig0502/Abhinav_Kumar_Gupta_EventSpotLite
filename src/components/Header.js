@@ -64,7 +64,7 @@ const Header = () => {
                   navigate("/");
                 }}
               >
-                Popularity
+                Home
               </li>
               <li
                 //   className="mt-3 ml-11 px-11 py-2 bg-white rounded-2xl cursor-pointer hover:bg-sky-500 hover:text-white"

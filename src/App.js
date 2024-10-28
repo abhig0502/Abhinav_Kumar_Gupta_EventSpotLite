@@ -10,6 +10,9 @@ import LoginPage from "./components/LoginPage";
 import Discover from "./components/Discover";
 import EventLocation from "./components/EventLocation";
 import { SearchProvider } from "./utils/context";
+import DanceCardList from "./components/DanceCardList";
+import MusicEventComponent from "./components/MusicEvenComponent";
+import ArtExhibitionComponent from "./components/ArtExibitionComponent";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -40,8 +43,16 @@ function App() {
       element: <EventLocation />,
     },
     {
-      path: "/header", // Catch-all route for undefined paths
-      element: <Header />,
+      path: "/dance", // Catch-all route for undefined paths
+      element: <DanceCardList />,
+    },
+    {
+      path: "/music", // Catch-all route for undefined paths
+      element: <MusicEventComponent />,
+    },
+    {
+      path: "/art", // Catch-all route for undefined paths
+      element: <ArtExhibitionComponent />,
     },
   ]);
 
