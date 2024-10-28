@@ -39,7 +39,9 @@ const SideMenu = () => {
                 //   className="ml-3 px-5 py-5 mt-4 rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500 "
                 className="ml-3 px-3 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white  transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center mt-1"
                 onClick={() => {
-                  navigate("/");
+                  navigate("/")
+                  ;
+
                 }}>
                 Home
               </li>
@@ -55,7 +57,8 @@ const SideMenu = () => {
                 //   className="ml-3 px-5 py-5 mt- rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500"
                 className="ml-3 px-3 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
                 onClick={() => {
-                  navigate("/dance");
+                  navigate("/dance")
+                  setIsSidebarOpen(false);
                 }}>
                 Dancing
               </li>
@@ -70,7 +73,8 @@ const SideMenu = () => {
                   //   className="ml-3 px-5 py-5 mt- rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500"
                   className="ml-3 px-3 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
                   onClick={() => {
-                  navigate("/music");
+                  navigate("/music")
+                  setIsSidebarOpen(false);;
                 }}>
                   Music Events
                 </li>
@@ -78,7 +82,8 @@ const SideMenu = () => {
                   //   className="ml-3 px-5 py-5 mt- rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500"
                   className="ml-3 px-3 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
                   onClick={() => {
-                  navigate("/art");
+                  navigate("/art")
+                  setIsSidebarOpen(false);;
                 }}>
                   Art&Exhibitions
                 </li>
@@ -86,7 +91,8 @@ const SideMenu = () => {
                   //   className="ml-3 px-5 py-5 mt- rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500"
                   className=" px-20 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
                   onClick={() => {
-                  navigate("/tech");
+                  navigate("/tech")
+                  setIsSidebarOpen(false);;
                 }}>
                   Tech&Innovation
                 </li>
@@ -94,7 +100,8 @@ const SideMenu = () => {
                   //   className="ml-3 px-5 py-5 mt- rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500"
                   className="ml-3 px-3 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[15px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
                   onClick={() => {
-                  navigate("/sport");
+                  navigate("/sport")
+                  setIsSidebarOpen(false);;
                 }}>
                   Sports Events
                 </li>
@@ -102,7 +109,8 @@ const SideMenu = () => {
                   //   className="ml-3 px-5 py-5 mt- rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500"
                   className="ml-3 px-3 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
                   onClick={() => {
-                  navigate("/food");
+                  navigate("/food")
+                  setIsSidebarOpen(false);;
                 }}>
                   Food & Drink
                 </li>
@@ -110,7 +118,8 @@ const SideMenu = () => {
                   //   className="ml-3 px-5 py-5 mt- rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500"
                   className=" px-20 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
                   onClick={() => {
-                  navigate("/wellness");
+                  navigate("/wellness")
+                  setIsSidebarOpen(false);;
                 }}>
                   Wellness&Fitness
                 </li>
@@ -118,7 +127,8 @@ const SideMenu = () => {
                   //   className="ml-3 px-5 py-5 mt- rounded-2xl cursor-pointer bg-white mb-4 mr-5 text-[17px] text-center hover:bg-sky-500"
                   className="px-20 py-3 cursor-pointer rounded-sm bg-black mb-0 mr-5 text-[17px] text-white hover:bg-sky-500 hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:shadow-sm flex flex-col items-center justify-center "
                   onClick={() => {
-                  navigate("/outdoor");
+                  navigate("/outdoor")
+                  setIsSidebarOpen(false);;
                 }}>
                   Outdoor&Adventure
                 </li>
